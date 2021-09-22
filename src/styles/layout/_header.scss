@@ -1,0 +1,26 @@
+@use '../abstracts/colors' as colors;
+@use '../abstracts/font' as f;
+@use '../abstracts/mediaqueries' as mq;
+@use '../abstracts/functions' as fun;
+
+.header {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.55);
+    .header__logo {
+        align-items: center;
+        color: fun.color("darklight");
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+        .img__clime {
+            color: fun.color("darklight");
+            font-size: 3rem;
+        }
+        .title__text {
+            color: fun.color("darklight");
+            font-size: fun.fontSize("xl");
+            font-weight: fun.fontWeight("l");
+            margin: 0.95rem 0;
+        }
+    }
+}
