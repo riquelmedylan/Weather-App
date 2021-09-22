@@ -352,12 +352,14 @@ a {
 }
 
 .container__cards-weather .card__weather .weather__text-info {
+  color: #000;
   text-align: center;
   font-size: 1.1em;
   font-weight: 600;
 }
 
 .weather__text-info-title {
+  color: #000;
   text-align: center;
   font-size: 1.8em;
   font-weight: 700;
@@ -373,18 +375,20 @@ a {
   width: 90%;
 }
 .container__cards-weather .card__weather {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   border-radius: 5px;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template-rows: repeat(5, 0.6fr);
+  margin-left: 5px;
   place-items: center;
-  width: 18rem;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  width: 17.2rem;
 }
 .container__cards-weather .card__weather .weather__text-info-middle {
   text-align: center;
+  color: #000;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -415,15 +419,21 @@ a {
 }
 .header .header__logo {
   align-items: center;
-  color: #2d2d2d;
+  color: #2e2e2e;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   width: 90%;
 }
 .header .header__logo .img__clime {
-  color: #2d2d2d;
+  color: #2e2e2e;
   font-size: 3rem;
+}
+.header .header__logo .title__text {
+  color: #2e2e2e;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.95rem 0;
 }
 
 .main {
@@ -432,6 +442,11 @@ a {
 
 .main__text-center {
   text-align: center;
+}
+
+.swiper-container {
+  border-radius: 5px;
+  padding: 10px 0;
 }
 
 * {

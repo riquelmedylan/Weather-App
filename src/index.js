@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { WeatherApp } from './WeatherApp';
-import './styles/styles.scss'
+import React from "react";
+import ReactDOM from "react-dom";
+import { WeatherApp } from "./WeatherApp";
+import "./styles/styles.scss";
 
-ReactDOM.render(
-    <WeatherApp />,
-  document.getElementById('root')
-);
-
+ReactDOM.render(<WeatherApp />, document.getElementById("root"));
