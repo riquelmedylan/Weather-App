@@ -14,9 +14,6 @@ export const CardsPrincipalCitys = () => {
     ];
 
     const params = {
-        autoplay: {
-            delay: 3000,
-        },
         loop: true,
         breakpoints: {
             1440: {
@@ -40,10 +37,14 @@ export const CardsPrincipalCitys = () => {
 
     return (
         <section className="container__cards-weather">
-            <Swiper {...params} onSwiper={(swiper) => console.log(swiper)}>
+            <Swiper {...params}>
                 {countries.map((country) => (
                     <SwiperSlide key={country}>
-                        <CardsWeather key={country} location={country} />
+                        <CardsWeather
+                            key={country}
+                            classWeather={"card__weather-95w"}
+                            location={country}
+                        />
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -17,7 +17,11 @@ export const Home = () => {
             <section className="container__cards-weather">
                 {cards.length > 0 &&
                     cards.map((card) => (
-                        <CardsWeather key={card} location={card} />
+                        <CardsWeather
+                            key={card}
+                            classWeather={"card__solitary"}
+                            location={card}
+                        />
                     ))}
             </section>
         </main>
