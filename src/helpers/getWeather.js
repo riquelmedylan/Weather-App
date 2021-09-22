@@ -1,5 +1,5 @@
 export const getWeather = async (location) => {
-    const url = `http://api.weatherapi.com/v1/current.json?key=0a8303cd491645daa9835355210809&q=${encodeURI(
+    const url = `https://api.weatherapi.com/v1/current.json?key=0a8303cd491645daa9835355210809&q=${encodeURI(
         location
     )}&aqi=no`;
 
