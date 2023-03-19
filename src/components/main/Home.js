@@ -16,9 +16,9 @@ export const Home = () => {
             <FormCards setCards={setCards} />
             <section className="container__cards-weather">
                 {cards.length > 0 &&
-                    cards.map((card) => (
+                    cards.map((card, i) => (
                         <CardsWeather
-                            key={card}
+                            key={i}
                             classWeather={"card__solitary"}
                             location={card}
                         />
